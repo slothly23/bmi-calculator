@@ -39,14 +39,3 @@ Penilaian akan dilakukan dari beberapa hal:
 4. Kemampuan peserta menggunakan Git & GitHub
 5. Kemampuan peserta dalam mendeploy aplikasi website
 
-
-
-
-Penilaian
-Penilaian akan dilakukan dari beberapa hal:
-
-Kode HTML, CSS, dan JavaScript yang terorganisasi dengan baik
-Logic yang sesuai dengan kebutuhan pada aplikasi
-Tampilan dan output sesuai dengan Expected Result
-Kemampuan peserta menggunakan Git & GitHub
-Kemampuan peserta dalam mendeploy aplikasi website
