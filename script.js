@@ -53,12 +53,16 @@ function hitungBmi(){
             desc.innerHTML = 'Your BMI result indicates you are in the obese category.';
         }
     } else{
-        hasil.innerHTML = '';
+        bmiScore.innerHTML = '';
+        bmiRating.innerHTML = '';
+        desc.innerHTML = '';
     }
 } 
 
 //fungsi reset
 function resetBmi(){
     document.getElementById('myForm').reset();
-    hasil.innerHTML = '';
+    document.getElementById('bmi-score').innerHTML = '';
+    document.getElementById('bmi-rating').innerHTML = '';
+    document.getElementById('bmi-ratingDesc').innerHTML = '';
 }
