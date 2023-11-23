@@ -43,3 +43,9 @@ function hitungBmi(){
         hasil.innerHTML = '';
     }
 } 
+
+//fungsi reset
+function resetBmi(){
+    document.getElementById('myForm').reset();
+    hasil.innerHTML = '';
+}
