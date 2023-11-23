@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@400;700&family=Titillium+Web:ital,wght@0,400;0,700;1,400&family=Varela+Round&display=swap');
+
+body{
+    font-family: Varela Round, sans-serif;
+    font-size: 16px;
+}
+
+main{
+    margin: auto;
+    width: 50%;
+    min-width: 300px;
+    max-width: 700px;
+}
+main h1{
+    text-align: center;
+    margin-top: 80px;
+    font-size: 2.3rem;
+}
+main #form-bmi-title{
+    font-size: 1.5rem;
+    margin-left: 12px;
+    margin-top: 4px;
+}
+main #form-bmi-subtitle{
+    margin: 4px 12px 0;
+}
+
+main .container{
+    margin-bottom: 60px;
+}
+.kalkulator {
+    background-color: #36474f;
+    color: #fff;
+    padding: 28px 20px 20px 20px;
+    position: relative;
+    font-size: 14px;
+    font-weight: 400;
+}
+.kalkulator fieldset{
+    border: none;
+}
+.kalkulator .form-element{
+    margin: 16px 0px;
+}
+.kalkulator .form-element label{
+    margin-bottom: 8px;
+    display: block;
+}
+.kalkulator .input-wrapper{
+    position: relative;
+}
+.kalkulator input {
+    box-sizing: border-box;
+    border-radius: 4px;
+    height: 48px;
+    width: 100%;
+    padding: 0 17px;
+    border: solid 2px #fff;
+    font-size: 14px;
+    font-weight: 400;
+}
+.kalkulator .weight-unit{
+    height: 48px;
+    line-height: 48px;
+    position: absolute;
+    top: 0;
+    bottom: auto;
+    left: auto;
+    right: 0;
+    display: block;
+    background-color: #9db4bf;
+    width: 50px;
+    text-align: center;
+    border-radius: 0 4px 4px 0;
+}
+.kalkulator .height-unit{
+    height: 48px;
+    line-height: 48px;
+    position: absolute;
+    top: 0;
+    bottom: auto;
+    left: auto;
+    right: 0;
+    display: block;
+    background-color: #9db4bf;
+    width: 50px;
+    text-align: center;
+    border-radius: 0 4px 4px 0;
+}
+.kalkulator .form-element #error-weight{
+    color: #fbb3b5;
+}
+.kalkulator .form-element #error-height{
+    color: #fbb3b5;
+}
+
+.btnHitung{
+    border: none;
+    padding: 12px 32px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #04AA6D;   
+    color: white;
+}
+ .btnHitung:hover{
+    background-color: #059e66; 
+}
+
+ .btnReset{
+    border: none;
+    padding: 12px 32px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #9eb5c0;
+    color:white;
+}
+.btnReset:hover{
+    background-color: #5a7785;
+}
+
+p{
+    display: block;
+}

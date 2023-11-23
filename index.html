@@ -9,31 +9,56 @@
 </head>
 
 <body>
-    <div class ="kalkulator">
-        <div class="heading">
-            <h1>Check your BMI</h1>
-            <p>Enter your weight and height below to check your BMI results</p>
-        </div>
-        <form id="myForm">
-            <div class="isian">
-                <label>Put your weight here in (KG)</label>
-                <input type="text" placeholder="60" id="weight"><br><span id="error_weight"></span>
-            </div>
-                
-            <div class="isian">
-                <label>Put your height here in (CM)</label>
-                <input type="text" placeholder="170" id="height"><br><span id="error_height"></span>
-            </div>
-            
-            <div id="tombol">
-                <button type="button" class="button btnHitung" onclick="hitungBmi()">Calculate BMI</button> <span>
-                <button type="button" class="button btnReset" onclick="resetBmi()">reset</button></span>
-            </div>
+    <main>
+        <h1>Body mass index calculator for adults</h1>
+        <div class ="container kalkulator">
+            <form id="myForm">
+                <legend id="form-bmi-title">Check your BMI</legend>
+                <p id="form-bmi-subtitle" class="bmi-subtitle">Enter your weight and height below to check your BMI results</p>
+                <fieldset>
+                    <div class="form-element">
+                        <label id="bmi-widthlabel" for="bmi-weight">Weight</label>
+                        <div class="input-wrapper">
+                            <input type="text" id="bmi-weight" class="bmi-weight" placeholder="Please enter your weight here" maxlength="3">
+                            <span class="weight-unit" title="kg">kg</span>
+                            <span id="error-weight"></span>
+                        </div>
+                    </div>
+                    <div class="form-element">
+                        <label id="bmi-heightlabel" for="bmi-height">Height</label>
+                        <div class="input-wrapper">
+                            <input type="text" id="bmi-height" class="bmi-height" placeholder="Please enter your height here" maxlength="3">
+                            <span class="height-unit">cm</span>
+                            <span id="error-height"></span>
+                        </div>
+                    <div class="form-element" id="btn">
+                        <button type="button" class="btnHitung" onclick="hitungBmi()">Calculate BMI</button> <span>
+                        <button type="button" class="btnReset" onclick="resetBmi()">Reset</button></span>
+                    </div>
+    
+                    <div>
+                        <p id="bmi-score"></p>
+                        <p><strong id="bmi-rating"></strong></p>
+                        <p id="bmi-ratingDesc"></p>
+                    </div>
+                </fieldset>
+            </form>
+        </div> 
 
-            <div>
-               <p  id="hasil"></p>
-            </div>
-        </form>
-    </div> 
+        <div class="container content">
+            <p>Body Mass Index is used to estimate your total amount of fat. It is only an approximate measure of the best weight for your health.</p> 
+            <p>This calculator is designed for men and women over the age of 18.<br><br>
+            A healthy <strong>BMI for an adult is between 20 and 25</strong>. 
+            <h2 id="what-your-bmi-means"><strong>What your BMI means</strong></h2> 
+            <p>Once you have measured your BMI, you can determine your healthy weight range. If your BMI is:</p> 
+            <ul>
+                <li>Under 18.5 - you are very underweight and possibly malnourished.</li> 
+                <li>18.5 to 24.9 - you have a healthy weight range for young and middle-aged adults.</li> 
+                <li>25.0 to 29.9 - you are overweight</li> 
+                <li>Over 30 - you are obese.</li>
+            </ul>
+        </div>
+    </main>
+    
 </body>
 </html>
